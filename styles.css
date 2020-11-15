@@ -13,6 +13,7 @@ header {
     position: sticky;
     background-color: rgba(254, 254, 254, 0.8);
     top: 0;
+    z-index: 1;
 }
 
 nav {
@@ -74,10 +75,6 @@ a.get-started {
         color: rgb(22, 72, 77);
     }
 
-    .grid-container2 {
-        grid-template-rows: 350px 350px;
-        grid-template-columns: 40% 40%;
-    }
 }
 
 
@@ -92,10 +89,25 @@ h1 {
     display: grid;
     grid-template-rows: 350px;
     grid-template-columns: 22% 22% 22% 22%;
+    grid-template-areas: 
+    "area1 area2 area3 area4";
     justify-content: center;
     gap: 15px 30px;
     text-align: center;
 }
+.item1 {
+    grid-area: area1;
+}
+.item3 {
+    grid-area: area2;
+}
+.item3 {
+    grid-area: area3;
+}
+.item4 {
+    grid-area: area4;
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: auto auto;
@@ -119,6 +131,7 @@ h1 {
 }
 
 .grid-item  img {
+    z-index: 0;
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -127,6 +140,7 @@ h1 {
     transition: 1s ease;
 }
 .grid-item  img:hover {
+    z-index: 0;
     transform: scale(1.1);
 }
 
