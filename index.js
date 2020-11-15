@@ -1,3 +1,17 @@
 function fn1 () {
     alert("Holi uwu")
 }
+
+function fnc2() {
+    document.getElementById("navigation").style.display = "none";
+}
+
+window.addEventListener("scroll", function(event) {
+    if (document.scrollingElement.scrollTop > 108) {
+        document.getElementById("navigation").style.visibility = "hidden";
+        document.getElementsByTagName("header").item(0).style.visibility = "hidden";
+    } else if (document.scrollingElement.scrollTop < 108) {
+        document.getElementById("navigation").style.visibility = "visible";
+        document.getElementsByTagName("header").item(0).style.visibility = "visible";
+    }
+});
