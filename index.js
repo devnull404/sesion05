@@ -15,3 +15,13 @@ window.addEventListener("scroll", function(event) {
         document.getElementsByTagName("header").item(0).style.visibility = "visible";
     }
 });
+
+function fnc_menu_over () {
+    console.log("Oh! You are over me!")
+    document.getElementById("products").style.display = "block";
+}
+
+function fnc_menu_out () {
+    console.log("Oh, you are OUT of me!")
+    document.getElementById("products").style.display = "none";
+}

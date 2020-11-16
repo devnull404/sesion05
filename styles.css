@@ -1,8 +1,3 @@
-{
-    margin: 5px;
-    border: 1px dotted blue;
-}
-
 * {
     margin: 0px;
     padding: 0;
@@ -155,4 +150,17 @@ section.info p {
 
 h4 {
     padding: 0 10px 0 10px;
+}
+
+#products {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgb(150, 150, 150);
+    margin: 10px 0 0 0;
 }

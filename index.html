@@ -11,7 +11,13 @@
     <header>
         <nav id="navigation">
             <a href=""><img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="header-logo"></a>
-            <a class="middle-nav" href="">Products</a>
+            <div>
+                <a onmouseover="fnc_menu_over()" class="middle-nav" href="">Products</a>
+                <p onmouseout="window.setTimeout(fnc_menu_out, 800)" onmouseover="fnc_menu_over()" id="products">
+                    <a href="">Product 1</a>
+                    <a href="">Product 2</a>
+                </p>
+            </div>
             <a class="middle-nav" href="">Templates</a>
             <a class="middle-nav" href="">Pricing</a>
             <a class="middle-nav" href="">Customers</a>
